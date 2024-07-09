@@ -88,7 +88,10 @@ func printBoard(board [][]string) {
 
 func main() {
 	// Define the size of the board
-	n := 8
+	size := 0
+	fmt.Print("Enter the size of the board: ")
+	fmt.Scanln(&size)
+	n := size
 
 	// Solve the N-Queens problem
 	board := solveNQueens(n)
